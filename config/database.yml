@@ -16,9 +16,11 @@ development:
   adapter: postgresql
   encoding: unicode
   database: ALiCCSapp_development
+  host: localhost
+  port: 5432
   pool: 5
-  username: ALiCCSapp
-  password:
+  username: postgres
+  password: Breti115
 
   # Connect on a TCP socket. Omitted by default since the client uses a
   # domain socket that doesn't need configuration. Windows does not have
@@ -42,14 +44,18 @@ test:
   adapter: postgresql
   encoding: unicode
   database: ALiCCSapp_test
+  host: localhost
   pool: 5
-  username: ALiCCSapp
-  password:
+  port: 5432
+  username: postgres
+  password: Breti115
 
 production:
   adapter: postgresql
   encoding: unicode
   database: ALiCCSapp_production
+  host: localhost
   pool: 5
-  username: ALiCCSapp
-  password:
+  port: 5432
+  username: postgres
+  password: Breti115

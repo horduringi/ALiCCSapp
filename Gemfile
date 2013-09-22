@@ -22,6 +22,9 @@ end
 
 gem 'jquery-rails'
 
+# for user management
+gem 'devise'
+
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
