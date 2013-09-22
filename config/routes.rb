@@ -4,10 +4,12 @@ ALiCCSapp::Application.routes.draw do
   get "static_pages/help"
 
   devise_for :users
-
+  resources :journal
 
   root to: 'static_pages#home'
   match '/help',    to: 'static_pages#help',    via: 'get'
+
+  match '/journal/:id(:format)', to: 'journal#show', via: 'get'
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
