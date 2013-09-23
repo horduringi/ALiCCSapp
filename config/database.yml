@@ -55,5 +55,5 @@ production:
   encoding: unicode
   database: ALiCCSapp_production
   pool: 5
-  username: postgres
+  username: horduringi@gmail.com
   password: Breti115
