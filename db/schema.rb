@@ -15,8 +15,8 @@ ActiveRecord::Schema.define(:version => 20130922065921) do
 
   create_table "anthracyclines_bolus_infs", :force => true do |t|
     t.string   "text"
-    t.timestamp "created_at", :null => false
-    t.timestamp "updated_at", :null => false
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
   end
 
   create_table "bone_marrow_transplantations", :force => true do |t|
@@ -39,20 +39,20 @@ ActiveRecord::Schema.define(:version => 20130922065921) do
     t.float    "bodysurfaceconditioning"
     t.float    "weightconditioning"
     t.float    "heightconditioning"
-    t.timestamp "created_at",                   :null => false
-    t.timestamp "updated_at",                   :null => false
+    t.datetime "created_at",                   :null => false
+    t.datetime "updated_at",                   :null => false
   end
 
   create_table "carcinomas_tumor_types", :force => true do |t|
     t.string   "text"
-    t.timestamp "created_at", :null => false
-    t.timestamp "updated_at", :null => false
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
   end
 
   create_table "chemo_or_bone_marrows", :force => true do |t|
     t.string   "text"
-    t.timestamp "created_at", :null => false
-    t.timestamp "updated_at", :null => false
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
   end
 
   create_table "chemo_therapies", :force => true do |t|
@@ -62,41 +62,41 @@ ActiveRecord::Schema.define(:version => 20130922065921) do
     t.float    "bodysurface"
     t.float    "weight"
     t.float    "height"
-    t.timestamp "created_at",      :null => false
-    t.timestamp "updated_at",      :null => false
+    t.datetime "created_at",      :null => false
+    t.datetime "updated_at",      :null => false
   end
 
   create_table "chromosomal_disorders", :force => true do |t|
     t.string   "text"
-    t.timestamp "created_at", :null => false
-    t.timestamp "updated_at", :null => false
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
     t.integer  "seq"
   end
 
   create_table "chronic_diseases", :force => true do |t|
     t.string   "text"
-    t.timestamp "created_at", :null => false
-    t.timestamp "updated_at", :null => false
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
     t.integer  "seq"
   end
 
   create_table "cns_tumor_histological_types", :force => true do |t|
     t.string   "text"
-    t.timestamp "created_at", :null => false
-    t.timestamp "updated_at", :null => false
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
   end
 
   create_table "cns_tumor_primary_tumor_sites", :force => true do |t|
     t.string   "text"
-    t.timestamp "created_at", :null => false
-    t.timestamp "updated_at", :null => false
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
   end
 
   create_table "countries", :force => true do |t|
     t.string   "countrycode"
     t.string   "countryname"
-    t.timestamp "created_at",  :null => false
-    t.timestamp "updated_at",  :null => false
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
   end
 
   create_table "cytostatic_drug_givens", :force => true do |t|
@@ -109,82 +109,82 @@ ActiveRecord::Schema.define(:version => 20130922065921) do
     t.integer  "anthracyclinesbolusinfnoyes"
     t.integer  "anthracyclinesbolusinf"
     t.integer  "cardioprotectants"
-    t.timestamp "created_at",                  :null => false
-    t.timestamp "updated_at",                  :null => false
+    t.datetime "created_at",                  :null => false
+    t.datetime "updated_at",                  :null => false
   end
 
   create_table "cytostatic_drugs", :force => true do |t|
     t.string   "text"
-    t.timestamp "created_at", :null => false
-    t.timestamp "updated_at", :null => false
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
   end
 
   create_table "donors", :force => true do |t|
     t.string   "text"
-    t.timestamp "created_at", :null => false
-    t.timestamp "updated_at", :null => false
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
   end
 
   create_table "dose_qualities", :force => true do |t|
     t.string   "text"
-    t.timestamp "created_at", :null => false
-    t.timestamp "updated_at", :null => false
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
   end
 
   create_table "first_prim_cancer_types", :force => true do |t|
     t.string   "text"
-    t.timestamp "created_at", :null => false
-    t.timestamp "updated_at", :null => false
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
   end
 
   create_table "genders", :force => true do |t|
     t.string   "gendername"
-    t.timestamp "created_at", :null => false
-    t.timestamp "updated_at", :null => false
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
   end
 
   create_table "germ_cell_tumors_and_gonadals_tumor_types", :force => true do |t|
     t.string   "text"
-    t.timestamp "created_at", :null => false
-    t.timestamp "updated_at", :null => false
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
   end
 
   create_table "hepatic_tumor_types", :force => true do |t|
     t.string   "text"
-    t.timestamp "created_at", :null => false
-    t.timestamp "updated_at", :null => false
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
   end
 
   create_table "hodgkin_lymphoma_sub_types", :force => true do |t|
     t.string   "text"
-    t.timestamp "created_at", :null => false
-    t.timestamp "updated_at", :null => false
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
     t.integer  "seq"
   end
 
   create_table "institutes", :force => true do |t|
     t.string   "name"
     t.string   "address"
-    t.timestamp "created_at", :null => false
-    t.timestamp "updated_at", :null => false
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
   end
 
   create_table "internal_radio_therapy_radioactive_agents", :force => true do |t|
     t.string   "text"
-    t.timestamp "created_at", :null => false
-    t.timestamp "updated_at", :null => false
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
   end
 
   create_table "internal_radiotherapy_dosages", :force => true do |t|
     t.string   "text"
-    t.timestamp "created_at", :null => false
-    t.timestamp "updated_at", :null => false
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
   end
 
   create_table "journals", :force => true do |t|
     t.integer  "studynumber"
     t.integer  "userid"
-    t.timestamp "timestampcreate"
+    t.datetime "datetimecreate"
     t.integer  "country"
     t.integer  "gender"
     t.string   "comments"
@@ -299,151 +299,151 @@ ActiveRecord::Schema.define(:version => 20130922065921) do
     t.integer  "lastdoctorsvisitstatus"
     t.string   "permanentcomplicationspec"
     t.integer  "numberofbonemarrowtransplantations"
-    t.timestamp "created_at",                                     :null => false
-    t.timestamp "updated_at",                                     :null => false
+    t.datetime "created_at",                                     :null => false
+    t.datetime "updated_at",                                     :null => false
   end
 
   create_table "last_doctors_visit_statuses", :force => true do |t|
     t.string   "text"
-    t.timestamp "created_at", :null => false
-    t.timestamp "updated_at", :null => false
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
   end
 
   create_table "laterality_rlbmns", :force => true do |t|
     t.string   "text"
-    t.timestamp "created_at", :null => false
-    t.timestamp "updated_at", :null => false
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
   end
 
   create_table "laterality_rlbmus", :force => true do |t|
     t.string   "text"
-    t.timestamp "created_at", :null => false
-    t.timestamp "updated_at", :null => false
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
   end
 
   create_table "laterality_rlbns", :force => true do |t|
     t.string   "text"
-    t.timestamp "created_at", :null => false
-    t.timestamp "updated_at", :null => false
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
   end
 
   create_table "laterality_rlbus", :force => true do |t|
     t.string   "text"
-    t.timestamp "created_at", :null => false
-    t.timestamp "updated_at", :null => false
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
   end
 
   create_table "leukemia_sub_types", :force => true do |t|
     t.string   "text"
-    t.timestamp "created_at", :null => false
-    t.timestamp "updated_at", :null => false
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
   end
 
   create_table "malignant_bone_tumor_primary_tumor_sites", :force => true do |t|
     t.string   "text"
-    t.timestamp "created_at", :null => false
-    t.timestamp "updated_at", :null => false
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
   end
 
   create_table "malignant_bone_tumor_types", :force => true do |t|
     t.string   "text"
-    t.timestamp "created_at", :null => false
-    t.timestamp "updated_at", :null => false
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
   end
 
   create_table "missing_infos", :force => true do |t|
     t.string   "textshort"
     t.string   "text"
-    t.timestamp "created_at", :null => false
-    t.timestamp "updated_at", :null => false
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
     t.integer  "seq"
   end
 
   create_table "neuroblastoma_primary_tumor_sites", :force => true do |t|
     t.string   "text"
-    t.timestamp "created_at", :null => false
-    t.timestamp "updated_at", :null => false
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
   end
 
   create_table "no_yes", :force => true do |t|
     t.string   "text"
-    t.timestamp "created_at", :null => false
-    t.timestamp "updated_at", :null => false
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
     t.integer  "seq"
   end
 
   create_table "no_yes_unknown_not_invs", :force => true do |t|
     t.string   "text"
-    t.timestamp "created_at", :null => false
-    t.timestamp "updated_at", :null => false
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
   end
 
   create_table "no_yes_unknowns", :force => true do |t|
     t.string   "text"
-    t.timestamp "created_at", :null => false
-    t.timestamp "updated_at", :null => false
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
     t.integer  "seq"
   end
 
   create_table "non_hodgkin_lymphoma_sub_types", :force => true do |t|
     t.string   "text"
-    t.timestamp "created_at", :null => false
-    t.timestamp "updated_at", :null => false
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
     t.integer  "seq"
   end
 
   create_table "other_primary_tumor_sites", :force => true do |t|
     t.string   "text"
-    t.timestamp "created_at", :null => false
-    t.timestamp "updated_at", :null => false
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
   end
 
   create_table "other_tumor_types", :force => true do |t|
     t.string   "text"
-    t.timestamp "created_at", :null => false
-    t.timestamp "updated_at", :null => false
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
   end
 
   create_table "radiation_qualities", :force => true do |t|
     t.string   "text"
-    t.timestamp "created_at", :null => false
-    t.timestamp "updated_at", :null => false
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
   end
 
   create_table "remission_statuses", :force => true do |t|
     t.string   "text"
-    t.timestamp "created_at", :null => false
-    t.timestamp "updated_at", :null => false
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
   end
 
   create_table "renal_tumor_types", :force => true do |t|
     t.string   "text"
-    t.timestamp "created_at", :null => false
-    t.timestamp "updated_at", :null => false
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
   end
 
   create_table "shielding_of_organs_specs", :force => true do |t|
     t.string   "text"
-    t.timestamp "created_at", :null => false
-    t.timestamp "updated_at", :null => false
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
   end
 
   create_table "soft_tissue_sarcomas_primary_tumor_sites", :force => true do |t|
     t.string   "text"
-    t.timestamp "created_at", :null => false
-    t.timestamp "updated_at", :null => false
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
   end
 
   create_table "soft_tissue_sarcomas_tumor_types", :force => true do |t|
     t.string   "text"
-    t.timestamp "created_at", :null => false
-    t.timestamp "updated_at", :null => false
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
   end
 
   create_table "sources", :force => true do |t|
     t.string   "text"
-    t.timestamp "created_at", :null => false
-    t.timestamp "updated_at", :null => false
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
   end
 
   create_table "surgeries", :force => true do |t|
@@ -454,53 +454,53 @@ ActiveRecord::Schema.define(:version => 20130922065921) do
     t.integer  "surgerycompleteremovalorgan"
     t.integer  "surgerycompleteremovalorganspec"
     t.integer  "surgerycompleteremovalorganlaterality"
-    t.timestamp "created_at",                            :null => false
-    t.timestamp "updated_at",                            :null => false
+    t.datetime "created_at",                            :null => false
+    t.datetime "updated_at",                            :null => false
   end
 
   create_table "surgery_complete_removal_organ_lateralities", :force => true do |t|
     t.string   "text"
-    t.timestamp "created_at", :null => false
-    t.timestamp "updated_at", :null => false
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
   end
 
   create_table "surgery_complete_removal_organ_specs", :force => true do |t|
     t.string   "text"
-    t.timestamp "created_at", :null => false
-    t.timestamp "updated_at", :null => false
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
   end
 
   create_table "surgery_radicalities", :force => true do |t|
     t.string   "text"
-    t.timestamp "created_at", :null => false
-    t.timestamp "updated_at", :null => false
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
   end
 
   create_table "surgery_types", :force => true do |t|
     t.string   "text"
-    t.timestamp "created_at", :null => false
-    t.timestamp "updated_at", :null => false
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
   end
 
   create_table "type_of_brachytherapy_codes", :force => true do |t|
     t.string   "text"
-    t.timestamp "created_at", :null => false
-    t.timestamp "updated_at", :null => false
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
   end
 
   create_table "users", :force => true do |t|
     t.string   "email",                  :default => "", :null => false
     t.string   "encrypted_password",     :default => "", :null => false
     t.string   "reset_password_token"
-    t.timestamp "reset_password_sent_at"
-    t.timestamp "remember_created_at"
+    t.datetime "reset_password_sent_at"
+    t.datetime "remember_created_at"
     t.integer  "sign_in_count",          :default => 0,  :null => false
-    t.timestamp "current_sign_in_at"
-    t.timestamp "last_sign_in_at"
+    t.datetime "current_sign_in_at"
+    t.datetime "last_sign_in_at"
     t.string   "current_sign_in_ip"
     t.string   "last_sign_in_ip"
-    t.timestamp "created_at",                             :null => false
-    t.timestamp "updated_at",                             :null => false
+    t.datetime "created_at",                             :null => false
+    t.datetime "updated_at",                             :null => false
   end
 
   add_index "users", ["email"], :name => "index_users_on_email", :unique => true
